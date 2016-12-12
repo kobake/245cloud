@@ -33,6 +33,14 @@ class @Nicovideo
     $dom.append(script)
     script.src = "http://ext.nicovideo.jp/thumb_watch/#{sm_id}"
 
+    # 自動再生 (1秒毎に再生ボタンの出現を監視。見つけたら再生)
+    nicoPlayCheck = () ->
+      if $('.unplayed .fx2dmph')
+        $('.unplayed .fx2dmph').click()
+      else
+        setTimeout(nicoPlayCheck, 1000)
+    setTimeout(nicoPlayCheck, 1000)
+
   @search: (keyword, $dom, callback=null) ->
     url = "http://api.search.nicovideo.jp/api/snapshot/"
     query = {
