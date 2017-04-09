@@ -99,6 +99,9 @@
     <None Include="app\views\users\show.html.haml" />
     <None Include="app\views\welcome\index.html.haml" />
     <None Include="app\views\welcome\pitch.html.haml" />
+    <None Include="Capfile" />
+    <None Include="circle.yml" />
+    <None Include="config.ru" />
     <None Include="config\application.rb" />
     <None Include="config\boot.rb" />
     <None Include="config\database.yml" />
@@ -141,6 +144,10 @@
     <None Include="db\migrate\20160611175825_add_num_to_comment.rb" />
     <None Include="db\schema.rb" />
     <None Include="db\seeds.rb" />
+    <None Include="Gemfile" />
+    <None Include="Gemfile.lock" />
+    <None Include="Rakefile" />
+    <None Include="README.md" />
     <None Include="spec\decorators\workload_decorator_spec.rb" />
     <None Include="spec\factories\users.rb" />
     <None Include="spec\features\login_spec.rb" />
